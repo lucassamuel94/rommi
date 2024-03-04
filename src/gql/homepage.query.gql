@@ -1,0 +1,58 @@
+query HomePage {
+  homepage {
+    slides {
+      nome
+      imagem {
+        url
+        alt
+      }
+    }
+    fornecedores {
+      id
+      alt
+      url
+    }
+    section01Title {
+      id
+      title
+      titleAbout
+      subtitle
+    }
+    section01Ambients {
+      id
+      titulo
+      descricao
+      image {
+        id
+        url
+      }
+    }
+    section01Features {
+      id
+      feature
+      resumo
+      descricao
+    }
+    section02Title {
+      id
+      title
+      titleAbout
+      subtitle
+    }
+    section02Imagens {
+      id
+      url
+    }
+    aboutImage {
+      id
+      url
+      alt
+    }
+    aboutContent {
+      id
+      title
+      titleAbout
+      subtitle
+    }
+  }
+}
