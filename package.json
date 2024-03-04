@@ -7,10 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "next lint --fix"
+    "lint:fix": "next lint --fix",
+    "codegen": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
+    "@urql/core": "^4.3.0",
+    "@urql/next": "^1.1.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "lucide-react": "^0.343.0",
@@ -18,9 +21,12 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwind-merge": "^2.2.1",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "urql": "^4.0.6"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.2",
+    "@graphql-codegen/client-preset": "^4.2.4",
     "@next/eslint-plugin-next": "^14.1.0",
     "@types/node": "^20.11.22",
     "@types/react": "^18.2.60",
@@ -39,6 +45,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-tailwindcss": "^3.14.3",
+    "graphql": "^16.8.1",
     "postcss": "^8.4.35",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.11",
