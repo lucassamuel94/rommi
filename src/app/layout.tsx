@@ -1,16 +1,15 @@
-import type { Metadata } from 'next'
-import '@/styles/globals.css'
-import { fontHeading, fontSans } from '@/styles/fonts'
 import { cn } from '@/lib/utils'
+import { fontHeading, fontSans } from '@/styles/fonts'
+import '@/styles/globals.css'
+import type { Metadata } from 'next'
 
 type RootLayoutProps = {
   children: React.ReactNode
 }
 
 export const metadata: Metadata = {
-  title: 'Next 14 BFB',
-  description:
-    'Boilerplate default de projetos em Next14 desenvolvido por Lucas Samuel'
+  title: 'ROMMI',
+  description: 'Conceito e Design'
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
