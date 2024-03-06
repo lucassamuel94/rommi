@@ -1,7 +1,7 @@
+import { Header } from '@/components/header'
 import { HomePageDocument, HomePageQuery, SlideRecord } from '@/gql/generated'
 import { datoClient } from '@/lib/client'
 import { registerUrql } from '@urql/next/rsc'
-import Link from 'next/link'
 import { OperationResult } from 'urql'
 
 const { getClient } = registerUrql(datoClient)
@@ -17,10 +17,10 @@ export default async function HomeApp() {
   } = result
 
   return (
-    <main className='container py-10'>
-      <Link href={'/'}>
-        <h1 className='font-medium'>Boilerplate Next14</h1>
-      </Link>
+    <main>
+      <div className='h-[800px] bg-black'>
+        <Header />
+      </div>
 
       <ul>
         {homepage?.slides.map((slide: SlideRecord) => (
